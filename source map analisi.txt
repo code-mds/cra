@@ -1,0 +1,93 @@
+--------------------------------------------------
+create-react-app 
+	cra = 116K
+total size : 132K
+--------------------------------------------------
+	cra = 116K
+	@material-ui/core = 0K
+
+no import
+total size : 132K (react-dom=116K)
+
+--------------------------------------------------
+	cra = 116K
+	@material-ui/core = 72K
+
+import { TextField } from '@material-ui/core';
+
+<TextField label="Note" />
+
+total size : 247K
+
+--------------------------------------------------
+	cra = 116K
+	@material-ui/core = 72K
+
+import TextField from '@material-ui/core/TextField';
+
+<TextField label="Note" />
+
+total size: 247K
+
+--------------------------------------------------
+	cra = 116K
+	@material-ui/core = 74K
+	@material-ui/icons = 600B
+
+import LaunchIcon from '@material-ui/icons/Launch';
+import TextField from '@material-ui/core/TextField';
+
+<TextField label="Note" />
+<LaunchIcon />
+
+total size: 252K
+
+--------------------------------------------------
+	cra = 116K
+	@material-ui/core = 113K
+	@material-ui/icons = 600B
+	@material-ui/lab = 18K
+
+import LaunchIcon from '@material-ui/icons/Launch';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+
+<TextField label="Note" />
+<LaunchIcon />
+<Autocomplete ...>
+
+total size: 316K
+
+------------------------------------------------
+"react": "^17.0.1",		= 116K
+"@material-ui/core": "^4.11.2",	= 360K
+"@material-ui/icons": "4.9.1",
+"@material-ui/lab": "^4.0.0-alpha.56",
+material-table[1.69.2] 		= 142K
+	 + 85K react-beautiful-dnd
+	 + 48K date-fns
+	 + 340K jspdf
+
+import LaunchIcon from '@material-ui/icons/Launch';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import MaterialTable from 'material-table';
+
+<TextField label="Note" />
+<LaunchIcon />
+<Autocomplete ...>
+<MaterialTable ...>
+
+total size: 1.6MB
+
+--------------------------------------------------
+PROGETTO SEMESTRE
+    "react": "^16.13.1",			= 114K
+    "@material-ui/core": "^4.11.0",	= 272K
+    "@material-ui/icons": "4.9.1",	= 3K
+    "@material-ui/lab": "^4.0.0-alpha.56", = 18K
+	"material-table": "1.57.2",	 	= 113K
+	 + 81K react-beautiful-dnd
+	 + 46K date-fns
+
+total size: 1MB
